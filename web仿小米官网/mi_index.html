@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <link rel="stylesheet" type="text/css" href="css样式/style.css" />
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('icomoon/fonts/icomoon.eot?jd9meb');
+            src: url('icomoon/fonts/icomoon.eot?jd9meb#iefix') format('embedded-opentype'),
+                url('icomoon/fonts/icomoon.ttf?jd9meb') format('truetype'),
+                url('icomoon/fonts/icomoon.woff?jd9meb') format('woff'),
+                url('icomoon/fonts/icomoon.svg?jd9meb#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="right-nav">
+        <li><img src="./images/右侧侧边栏/手机.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">手机APP</span></li>
+        <li><img src="./images/右侧侧边栏/个人.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">个人中心</span></li>
+        <li><img src="./images/右侧侧边栏/售后服务.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">购物车</span></li>
+        <li><img src="./images/右侧侧边栏/人工.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">售后服务</span></li>
+        <li><img src="./images/右侧侧边栏/购物车.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">人工客服</span></li>
+    </ul>
+    <header>
+        <img src="images/advertise.jpg" alt="">
+    </header>
+    <nav>
+        <div id="ul1">
+            <ul id="nv1">
+                <li><a href="#">小米商城</a> <span>|</span></li>
+                <li><a href="#">MIUI</a> <span>|</span></li>
+                <li><a href="#">loT</a> <span>|</span></li>
+                <li><a href="#">云服务</a> <span>|</span></li>
+                <li><a href="#">金融</a> <span>|</span></li>
+                <li><a href="#">有品</a> <span>|</span></li>
+                <li><a href="#">小爱开放平台</a> <span>|</span></li>
+                <li><a href="#">企业团购</a> <span>|</span></li>
+                <li><a href="#">资质证照</a> <span>|</span></li>
+                <li><a href="#">协议规则</a> <span>|</span></li>
+                <li>
+                    <a href="#" class="down">下载app
+                        <div class="download">
+                            <div class="sanjiao">
+                            </div>
+                            <div class="down_app">
+                                <img src="images/download.png" alt="">
+                                小米商城APP
+                            </div>
+                        </div>
+                    </a> <span>|</span></li>
+                <li><a href="#">Select Location</a></li>
+            </ul>
+        </div>
+        <div class="ul2">
+            <ul>
+                <li><a href="#">登录</a><span>|</span></li>
+                <li><a href="regist.html">注册</a><span>|</span></li>
+                <li><a href="#">消息通知</a></li>
+            </ul>
+        </div>
+
+        <div id="car" onmouseover="show_shop()" onmouseout="out_shop()">
+            <a href="#" id="ico">
+                <i class="c1"> <span style="font-size: 12px;" id="shop">购物车</span> </i>
+                <div id="count">
+                    <p class="count">(0)</p>
+                </div>
+            </a>
+            <div class="car_hidden">
+                <p class="shop_id">
+                    购物车中还没有商品，赶紧选购吧！
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <div id="box">
+        <div class="box_header">
+            <div class="header-logo"><a href=""><img src="images/mi-logo.png" alt="小米图标"></a></div>
+            <ul id="box_nav">
+                <li style="width: 165px; height: 100px;"><a href="#"><img src="images/智能狂欢.gif" alt=""></a></li>
+                <li style="width: 84px; height: 62px;padding-top: 26px;margin-left: 8px;"><a href="#"><span
+                            class="text">小米手机</span></a></li>
+                <li style="width: 102px; height: 62px;padding-top: 26px"><a href="#"><span
+                            class="text">Redmi红米</span></a></li>
+                <li style="width: 52px; height: 62px;padding-top: 26px"><a href="#"><span class="text">电视</span></a>
+                </li>
+                <li style="width: 68px; height: 62px;padding-top: 26px"><a href="#"><span class="text">笔记本</span></a>
+                </li>
+                <li style="width: 52px; height: 62px;padding-top: 26px"><a href="#"><span class="text">家电</span></a>
+                </li>
+                <li style="width: 68px; height: 62px;padding-top: 26px"><a href="#"><span class="text">路由器</span></a>
+                </li>
+                <li style="width: 84px; height: 62px;padding-top: 26px"><a href="#"><span class="text">智能硬件</span></a>
+                </li>
+                <li style="width: 52px; height: 62px;padding-top: 26px"><a href="#"><span class="text">服务</span></a>
+                </li>
+                <li style="width: 52px; height: 62px;padding-top: 26px"><a href="#"><span class="text">社区</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================== -->
+        <div id="search">
+            <input type="text" name="search" placeholder="请输入关键字">
+            <input type="submit" value="" class="search_btn">
+        </div>
+    </div>
+
+    <!--==========================主体===================================  -->
+    <main>
+        <div id="m1">
+            <!-- 侧边栏盒子 -->
+            <div id="cotegrolist">
+                <ul class="cote_ul">
+                    <li onmouseover="show(0)" onmouseout="out()"><a href="#">手机 电话卡</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第二个li -->
+                    <li onmouseover="show(1)" onmouseout="out()"><a href="#">电视 盒子</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第三个li -->
+                    <li onmouseover="show(2)" onmouseout="out()"><a href="#">笔记本 显示器 平板</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第四个li -->
+                    <li onmouseover="show(3)" onmouseout="out()"><a href="#">家电 插线板</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第五个li -->
+                    <li onmouseover="show(4)" onmouseout="out()"><a href="#">出行 穿戴</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第六个li -->
+                    <li onmouseover="show(5)" onmouseout="out()"><a href="#">生活 箱包</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第七个li -->
+                    <li onmouseover="show(6)" onmouseout="out()"><a href="#">智能 路由器</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第八个li -->
+                    <li onmouseover="show(7)" onmouseout="out()"><a href="#">电源 配件</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第九个li -->
+                    <li onmouseover="show(8)" onmouseout="out()"><a href="#">健康 儿童</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 第十个li -->
+                    <li onmouseover="show(9)" onmouseout="out()"><a href="#">耳机 音响</a>
+                        <div class="jt"><i class="ic2"></i></div>
+                        <div class="hidden_cote">
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/11.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            Redmi 10X 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/12.webp" alt="">
+                                        <span class="span_text" style="margin-left: 50px;">
+                                            Redmi 10X 5G系列
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            小米10 青春版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/13.webp" alt="">
+                                        <span class="span_text" style="margin-left: 37px;">
+                                            Redmi K30 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 60px;">
+                                            Redmi K30 Pro 变焦版
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/22.webp" alt="">
+                                        <span class="span_text" style="margin-left: 48px;">
+                                            腾讯黑鲨游戏手机3
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/23.webp" alt="">
+                                        <span class="span_text" style="margin-left: 54px;">
+                                            腾讯黑鲨游戏手机3 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/21.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            小米10 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 8px;">
+                                            小米10
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/32.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 4G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/33.webp" alt="">
+                                        <span class="span_text" style="margin-left: 32px;">
+                                            Redmi K30 5G
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/31.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8A
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/42.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米MIX Alpha
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/43.webp" alt="">
+                                        <span class="span_text" style="margin-left: 46px;">
+                                            Redmi Note 8 Pro
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/41.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            Redmi Note 8
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 22px;">
+                                            小米CC9
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 24px;">
+                                            小米CC9e
+                                        </span>
+                                    </a></li>
+                            </ul>
+                            <ul class="hidden_cote_children">
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/51.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            Redmi 7A
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/52.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            移动4G+专区
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 35px;">
+                                            小米移动 电话卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/62.webp" alt="">
+                                        <span class="span_text" style="margin-left: 28px;">
+                                            手机上门维修
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/61.webp" alt="">
+                                        <span class="span_text" style="margin-left: 34px;">
+                                            云服务空间月卡
+                                        </span>
+                                    </a></li>
+                                <li><a href=""><img src="images/左侧侧边栏/1sj/64.webp" alt="">
+                                        <span class="span_text" style="margin-left: 18px;">
+                                            中国电信
+                                        </span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- ======================================================================= -->
+            <!--图片盒子  -->
+            <div class="swiper">
+                <img src="images/轮播图01.webp" alt="" id="pic1">
+            </div>
+            <a id="bt1"><span> </span></a>
+            <a id="bt2"><span></span></a>
+            <!-- 轮播列表 -->
+            <div id="pic_lb">
+                <ul>
+                    <li>
+                        <a id="num1" href="#" onmouseover="showimg(1)" onmouseout="showout()"></a>
+                        <a id="num2" href="#" onmouseover="showimg(2)" onmouseout="showout()"></a>
+                        <a id="num3" href="#" onmouseover="showimg(3)" onmouseout="showout()"></a>
+                        <a id="num4" href="#" onmouseover="showimg(4)" onmouseout="showout()"></a>
+                        <a id="num5" href="#" onmouseover="showimg(5)" onmouseout="showout()"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 小米闪购结构 -->
+        <div class="star_spec comWidth clf">
+            <div class="spec_top clf">
+                <h2 class="spec_type_title fl">小米闪购</h2>
+                <div class="spec_left_right fr">
+                    <a class="left_img fl" onclick="click()"></a>
+                    <a class="right_img fl" onclick="click()"></a>
+                </div>
+            </div>
+            <div class="spec_bottom clf">
+                <ul class="flashPurchase-countdown fl">
+                    <li class="flashPurchaseInfo spec_item spec_top_border5">
+                        <div class="time-title">00:00 场</div>
+                        <img src="images/闪电.png">
+                        <div class="falshDesc">距离开始还有</div>
+                        <div class="countdown clf">
+                            <div class="box flashPurchase_h fl"></div>
+                            <div class="dosh fl">:</div>
+                            <div class="box flashPurchase_m fl"></div>
+                            <div class="dosh fl">:</div>
+                            <div class="box flashPurchase_s fl"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="spec_wrapper">
+                    <ul class="spec_item_list">
+                        <li class="spec_item spec_top_border1">
+                            <a class="spec_img">
+                                <img src="images/图片更换01.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">米家小相机 黑色</a>
+                            </h3>
+                            <p class="spec_desc">清晰捕捉美好瞬间</p>
+                            <p class="spec_money">649元<span class="del">699元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border2">
+                            <a class="spec_img">
+                                <img src="images/图片更换02.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">米家电动剃须刀 黑色</a>
+                            </h3>
+                            <p class="spec_desc">剃得干净，剃得快</p>
+                            <p class="spec_money">189元<span class="del">199元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border3">
+                            <a class="spec_img">
+                                <img src="images/图片更换03.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">米家便携电动剃须刀 黑色</a>
+                            </h3>
+                            <p class="spec_desc">男人必备的第二把剃须刀</p>
+                            <p class="spec_money">169元<span class="del">179元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border4">
+                            <a class="spec_img">
+                                <img src="images/图片更换04.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">旅行运动360°自拍神器</a>
+                            </h3>
+                            <p class="spec_desc">旅行运动360°自拍神器</p>
+                            <p class="spec_money">1599元<span class="del">1699元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border5">
+                            <a class="spec_img">
+                                <img src="images/图片更换05.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">米家车载空气净化器（USB车充版） 灰色</a>
+                            </h3>
+                            <p class="spec_desc">高效净化车内空气</p>
+                            <p class="spec_money">389元<span class="del">499元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border1">
+                            <a class="spec_img">
+                                <img src="images/图片更换06.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">米兔智能积木 白色</a>
+                            </h3>
+                            <p class="spec_desc">动手又动脑</p>
+                            <p class="spec_money">179元<span class="del">199元</span></p>
+                        </li>
+                        <li class="spec_item spec_top_border2">
+                            <a class="spec_img">
+                                <img src="images/图片更换07.jpg" />
+                            </a>
+                            <h3 class="spec_title">
+                                <a href="#">小默相机 白色</a>
+                            </h3>
+                            <p class="spec_desc">发现新视角 自拍大不同</p>
+                            <p class="spec_money">379元<span class="del">399元</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script type="text/javascript" src="js文件/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regist</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('icomoon/fonts/icomoon.eot?jd9meb');
+            src: url('icomoon/fonts/icomoon.eot?jd9meb#iefix') format('embedded-opentype'),
+                url('icomoon/fonts/icomoon.ttf?jd9meb') format('truetype'),
+                url('icomoon/fonts/icomoon.woff?jd9meb') format('woff'),
+                url('icomoon/fonts/icomoon.svg?jd9meb#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css样式/regist.css" />
+</head>
+
+<body>
+    <ul class="right-nav">
+        <li><img src="./images/右侧侧边栏/手机.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">手机APP</span></li>
+        <li><img src="./images/右侧侧边栏/个人.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">个人中心</span></li>
+        <li><img src="./images/右侧侧边栏/售后服务.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">购物车</span></li>
+        <li><img src="./images/右侧侧边栏/人工.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">售后服务</span></li>
+        <li><img src="./images/右侧侧边栏/购物车.png" alt="" style="margin-left: 15px"><br><span
+                style="text-align: center;">人工客服</span></li>
+    </ul>
+    <header>
+        <img src="images/advertise.jpg" alt="">
+    </header>
+    <nav>
+        <div id="ul1">
+            <ul id="nv1">
+                <li><a href="">小米商城</a> <span>|</span></li>
+                <li><a href="">MIUI</a> <span>|</span></li>
+                <li><a href="">loT</a> <span>|</span></li>
+                <li><a href="">云服务</a> <span>|</span></li>
+                <li><a href="">金融</a> <span>|</span></li>
+                <li><a href="">有品</a> <span>|</span></li>
+                <li><a href="">小爱开放平台</a> <span>|</span></li>
+                <li><a href="">企业团购</a> <span>|</span></li>
+                <li><a href="">资质证照</a> <span>|</span></li>
+                <li><a href="">协议规则</a> <span>|</span></li>
+                <li><a href="">下载app</a> <span>|</span></li>
+                <li><a href="">Select Location</a></li>
+            </ul>
+        </div>
+        <div class="ul2">
+            <ul>
+                <li><a href="">登录</a><span>|</span></li>
+                <li><a href="">注册</a><span>|</span></li>
+                <li><a href="">消息通知</a></li>
+            </ul>
+        </div>
+
+        <div id="car">
+            <div id="ico">
+                <i class="c1"><span style="font-size: 12px;">购物车</span> </i>
+                <div id="count">
+                    <p>(0)</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <form action="">
+            <div class="box">
+                <label for="username" class="t_lable">
+                    <span>中国 +86</span>
+                    <input class="phone" maxlength="20" type="text" placeholder="请填写常用手机号"/>
+                </label>
+                <div class="tips">
+    
+                </div>
+            </div>
+    
+            <div class="box">
+                <label for="username" class="t_lable">验 证 码
+                    <input maxlength="20" type="text" placeholder="输入验证码"/>
+                </label>
+                <button type="button" onclick="fn()">获取验证码</button>
+            </div>
+    
+            <div class="box">
+                <label for="username" class="username">用 户 名
+                    <input maxlength="20" type="text" placeholder="您的账户名和登录名"/>
+                </label>
+                <div class="tips">
+    
+                </div>
+            </div>
+            <div class="box">
+                <label for="username" class="t_lable">设 置 密 码
+                    <input id="ver_code" maxlength="20" type="password" placeholder="建议至少使用两种字符组合" />
+                </label>
+                <img src="images/close.png" alt="" id="open-eye">
+            </div>
+            <div class="xy_box">
+                <input type="checkbox" id="xieyi"/>
+                阅读并同意
+                <a href="#">《小米企业用户注册协议》</a>
+                <a href="#">《隐私政策》</a>
+                <div class="tips">
+    
+                </div>
+            </div>
+            <div class="submit_box">
+                <button type="submit" id="submit_btn">立 即 注 册</button>
+            </div>
+        </form>
+    </section>
+    <script type="text/javascript" src="js文件/regist.js"></script>
+</body>
+
+</html>
